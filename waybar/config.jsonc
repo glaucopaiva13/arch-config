@@ -1,0 +1,108 @@
+{
+  // Waybar at top layer
+  "layer": "top",
+  "reload_on_style_change": true,
+
+  // Waybar position (top|bottom|left|right)
+  "position": "top",
+
+  // Waybar height (to be removed for auto height)
+  // "height": 10,
+
+  "passthrough": false,
+  "reload_style_on_change": true,
+
+  // Gaps between modules (4px)
+  "spacing": 10,
+
+  // Gap from the top of the screen
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-bottom": 1,
+
+  // Choose the order of the modules
+  "modules-left": ["custom/icon", "hyprland/window", "mpris"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray", "pulseaudio", "backlight", "clock", "battery", "custom/power"],
+
+  "custom/icon": {
+	  "format": ""
+  },
+
+  "hyprland/window": {
+	  "separate-outputs": true,
+    //"max-length": 20,
+    "format": "{class}"
+  },
+
+  // Per-module config
+  "hyprland/workspaces": {
+	  "disable-scroll": true,
+	  "on-click": "activate"
+  },
+
+  "tray": {
+	  "icon-size": 16,
+	  "spacing": 5,
+	  "show-passive-items": true
+  },
+
+  "clock": {
+	  "format": " {:%d/%m/%Y %H:%M}",
+	  "interval": 1,
+	  "tooltip-format": "<tt>{calendar}</tt>",
+	  "calendar": {
+		  "format": {
+			  "today": "<span color='#eed49f'><b>{}</b></span>"
+		  }
+	  }
+  },
+	  
+	  "backlight": {
+		  "format": " {percent}%",
+		  "tooltip": false
+	  },
+	  "battery": {
+		  "states": {
+			  "good": 95,
+			  "warning": 30,
+			  "critical": 15
+		  },
+		  "format": "{icon} {capacity}%",
+		  "format-charging": " {capacity}%",
+		  "format-plugged": " {capacity}%",
+		  "format-alt": "{time}",
+		  "format-icons": [
+			  "",
+			  "",
+			  "",
+			  "",
+			  ""
+		  ]
+	  },
+	  "custom/power": {
+		  "format": " ",
+		  "tooltip": false,
+		  "on-click": "systemctl poweroff"
+	  },
+	  "pulseaudio": {
+		  "format": "  {volume}%",
+		  "format-bluetooth": " {volume}%",
+		  "on-click": "pavucontrol"
+	  },
+	  "mpris": {
+		  "player": "spotify",
+		  "format": " {player_icon} {artist} - {title} ",
+		  "format-paused": "  {artist} - {title} ",
+		  "player-icons": {
+			  "spotify": ""
+		  },
+		  "max-length": 40
+	  },
+	  "actions": {
+		  "on-click-right": "shift_down",
+		  "on-click": "shift_up"
+	  }
+  }
+}
