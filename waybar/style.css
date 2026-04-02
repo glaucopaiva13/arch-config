@@ -26,7 +26,7 @@
 @define-color crust #181926;
 
 * {
-	font-family: "JetBrainsMono Nerd Font", monospace;
+	font-family: "DotGothic16","JetBrainsMono Nerd Font";
 	border: none;
 	min-height: 0;
 }

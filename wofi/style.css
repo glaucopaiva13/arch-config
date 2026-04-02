@@ -37,16 +37,19 @@ margin: 5px;
 border: 2px solid @green;
 color: @sapphire;
 background-color: @base;
+font-family: "DotGothic16";
 }
 
 #inner-box {
 margin: 5px;
 border: none;
+background-color: @base;
 }
 
 #outer-box {
 margin: 5px;
 border: none;
+background-color: @base;
 }
 
 #scroll {
@@ -58,8 +61,27 @@ border: none;
 margin: 5px;
 border: none;
 color: @sapphire;
+font-family: "DotGothic16";
+font-size: 15px;
+}
+
+#entry > * {
+color: @sapphire;
+}
+
+#entry.activatable {
+color: @sapphire;
+}
+
+#entry.activatable {
+background-color: @base;
 }
 
 #entry:selected {
 background-color: @base;
 }
+
+#entry:selected #text {
+font-weight: bold;
+}
+
