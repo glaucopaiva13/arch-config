@@ -1,8 +1,8 @@
 # Arch Linux Config
 
-Este repositório contém minha configuração pessoal.
+Este repositório contém minha configuração pessoal visando customização.
 
-## Estrutura do projeto
+## Estrutura
 
 - `hypr/`
   - `hyprland.conf` — configuração do Hyprland.
@@ -26,4 +26,4 @@ Este repositório contém minha configuração pessoal.
 
 ## Notas
 
-- Alguns plugins do nvim pode estar desatualizados.
+- Alguns plugins do neovim pode estar desatualizados.
