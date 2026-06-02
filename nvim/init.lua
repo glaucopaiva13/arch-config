@@ -27,7 +27,6 @@ local opts = {}
 -- Setup lazy.nvim
 require("lazy").setup("plugins")
 -- Apply theme
-vim.cmd.colorscheme("thorn")
 
 
 
