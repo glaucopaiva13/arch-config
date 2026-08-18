@@ -12,7 +12,6 @@ Este repositório contém minha configuração pessoal visando customização.
   - `kitty.conf.bak` — backup de configuração.
 - `nvim/`
   - `init.lua` — arquivo de inicialização do Neovim.
-  - `lua/plugins.lua` — lista de plugins gerenciados.
   - `lua/plugins/` — configurações dos plugins instalados.
 - `starship/`
   - `starship.toml` — tema e prompts do Starship.
